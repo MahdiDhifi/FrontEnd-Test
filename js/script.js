@@ -1,4 +1,5 @@
-	function toggleIcon(e) {
+//modify icon +/-	
+function toggleIcon(e) {
         $(e.target)
             .prev('.panel-heading')
             .find(".more-less")
@@ -8,7 +9,7 @@
   $('.panel-group').on('shown.bs.collapse', toggleIcon);
 	
 	
-	//parsing json
+	//get data from json file and display it
 	
 	$(document).ready(function(){
      $.ajax({url: 'js/products.json', success: function(result){
